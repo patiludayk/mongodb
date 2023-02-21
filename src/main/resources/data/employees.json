@@ -1,0 +1,114 @@
+{
+  "employees": [
+    {
+      "userId": "rirani",
+      "jobTitleName": "Developer",
+      "firstName": "Romin",
+      "lastName": "Irani",
+      "preferredFullName": "Romin Irani",
+      "employeeCode": "E1",
+      "region": "CA",
+      "phoneNumber": "408-1234567",
+      "emailAddress": "romin.k.irani@gmail.com"
+    },
+    {
+      "userId": "nirani",
+      "jobTitleName": "Developer",
+      "firstName": "Neil",
+      "lastName": "Irani",
+      "preferredFullName": "Neil Irani",
+      "employeeCode": "E2",
+      "region": "CA",
+      "phoneNumber": "408-1111111",
+      "emailAddress": "neilrirani@gmail.com"
+    },
+    {
+      "userId": "thanks",
+      "jobTitleName": "Directory",
+      "firstName": "Tom",
+      "lastName": "Hanks",
+      "preferredFullName": "Tom Hanks",
+      "employeeCode": "E3",
+      "region": "CA",
+      "phoneNumber": "408-2222222",
+      "emailAddress": "tomhanks@gmail.com"
+    },
+    {
+      "userId": "olu",
+      "jobTitleName": "Owner",
+      "firstName": "Josh",
+      "lastName": "Olu",
+      "preferredFullName": "Josh Olu",
+      "employeeCode": "E4",
+      "region": "CA",
+      "phoneNumber": "408-4322222",
+      "emailAddress": "josholu@gmail.com"
+    },
+    {
+      "userId": "Kelly",
+      "jobTitleName": "Owner",
+      "firstName": "Maria",
+      "lastName": "Kelly",
+      "preferredFullName": "Maria Kelly",
+      "employeeCode": "E5",
+      "region": "CA",
+      "phoneNumber": "408-9922222",
+      "emailAddress": "mariakelly@gmail.com"
+    },
+    {
+      "userId": "watson",
+      "jobTitleName": "Trainee",
+      "firstName": "John",
+      "lastName": "watson",
+      "preferredFullName": "John Watson",
+      "employeeCode": "E6",
+      "region": "CA",
+      "phoneNumber": "408-2220822",
+      "emailAddress": "johnwatson@gmail.com"
+    },
+    {
+      "userId": "Adler",
+      "jobTitleName": "HR",
+      "firstName": "Irene",
+      "lastName": "Adler",
+      "preferredFullName": "Adler",
+      "employeeCode": "E7",
+      "region": "CA",
+      "phoneNumber": "408-2222552",
+      "emailAddress": "ireneadler@gmail.com"
+    },
+    {
+      "userId": "holmesM",
+      "jobTitleName": "Supervisor",
+      "firstName": "Mycroft",
+      "lastName": "Holmes",
+      "preferredFullName": "Mycroft",
+      "employeeCode": "E8",
+      "region": "CA",
+      "phoneNumber": "408-2213222",
+      "emailAddress": "mholmes@gmail.com"
+    },
+    {
+      "userId": "holmess",
+      "jobTitleName": "Lead",
+      "firstName": "Sherlock",
+      "lastName": "Holmes",
+      "preferredFullName": "Sherlock",
+      "employeeCode": "E9",
+      "region": "CA",
+      "phoneNumber": "408-20022222",
+      "emailAddress": "holmess@gmail.com"
+    },
+    {
+      "userId": "hudson",
+      "jobTitleName": "Tester",
+      "firstName": "hudson",
+      "lastName": "janes",
+      "preferredFullName": "hudson",
+      "employeeCode": "E10",
+      "region": "CA",
+      "phoneNumber": "408-20002222",
+      "emailAddress": "hudsonj@gmail.com"
+    }
+  ]
+}
