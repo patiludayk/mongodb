@@ -1,0 +1,6 @@
+
+
+mongodb=/usr/local/var/mongodb
+logpath=/usr/local/var/log/mongodb/mongo.log
+mongodbLogfileLocal=src/main/resources/log/mongodb-log.log
+tempLogFile=src/main/resources/log/temp.log

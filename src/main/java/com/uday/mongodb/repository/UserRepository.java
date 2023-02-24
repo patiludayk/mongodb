@@ -17,7 +17,7 @@ public interface UserRepository extends MongoRepository<User, String>/*, Queryds
     /*
     This method, findPersonByUserName, requires a parameter for the query, i.e., the field to filter the query by.We specify this with the annotation @Query.
      */
-    @Query("{userId:'?0'}")
+    @Query("{userId:'?0'}")     //? is plaeholder for parameter, 0 is number of param.
     User findUserByUserId(String username);
 
     /*
