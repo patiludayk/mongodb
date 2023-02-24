@@ -47,7 +47,7 @@ public class MongoDbServerStartStopConfig {
         log.info("shutting down mongodb servers.");
         try {
             if (!isWindows) {
-                scriptRunner.runScriptWithCommand(Arrays.asList("sh", "src/main/resources/scripts/mongodb-server-stop.sh"));
+                scriptRunner.runScriptWithCommand(Arrays.asList("sh", this.getClass().getClassLoader().getResource("scripts/mongodb-server-stop.sh").getPath()));
             } else {
                 log.error("support not added for windows family. Please stop mongodb server manually.");
             }
