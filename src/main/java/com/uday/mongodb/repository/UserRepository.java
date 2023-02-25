@@ -48,9 +48,10 @@ public interface UserRepository extends MongoRepository<User, String>/*, Queryds
 
     List<Person> findByAgeBetween(int ageGT, int ageLT);
 
-    List<Person> findByNameStartingWith(String regexp);
+    List<Person> findByNameStartingWith(String regexp);*/
 
-    List<User> findByNameEndingWith(String regexp);//whats issue with this no property with 'name' found! */
+    @Query("{ firstName : { $regex: ?0 } }")
+    List<User> findByNameEndingWith(String regexp);//whats issue with this no property with 'name' found!
 
     @Query(value = "{}", fields = "{firstName : 1}")
     List<User> findNameAndId();

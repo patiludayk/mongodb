@@ -26,7 +26,7 @@ public class ScriptRunner {
 
             String line;
             while ((line = reader.readLine()) != null) {
-                log.debug(">> {}", line);
+                log.info(">> {}", line);
             }
 
             int exitVal = p.waitFor();

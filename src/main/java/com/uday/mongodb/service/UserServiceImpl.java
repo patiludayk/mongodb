@@ -6,6 +6,11 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
+
 @Service
 @Slf4j
 public class UserServiceImpl {
@@ -17,16 +22,21 @@ public class UserServiceImpl {
         this.repository = repository;
     }
 
-    public String saveUser(User user) {
-        final User save = repository.save(user);
-        return user.getUserId();
+    public List<String> saveUser(List<User> users) {
+        if (users.size() > 1) {
+            final List<User> userList = repository.findAll();
+            return users.stream().map(user -> repository.save(user)).map(savedUser -> savedUser.getUserId()).collect(Collectors.toList());
+            //final List<User> userList = repository.saveAll(users);
+            //return userList.stream().map(user -> user.getUserId()).collect(Collectors.toList());
+        }
+        return Arrays.asList(repository.save(users.get(0)).getUserId());
     }
 
-    public User getUser(String id) {
-
-        final User user = repository.findUserByUserId(id);
-
-        return user;
+    public List<User> getUser(Optional<String> id) {
+        if (!id.isPresent()) {
+            return repository.findAll();
+        }
+        return Arrays.asList(repository.findUserByUserId(id.get()));
     }
 
 }
